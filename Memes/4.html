@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Обратная связь</title>
+</head>
+<body style="font-family: 'Arial'; color: white" bgcolor="black" >
+
+<table border="1" align="center" bgcolor="white" width="400">
+    <tr>
+        <td>
+
+            <p align="center">
+                <img src="img/2555502.jpg" height="200">
+            </p>
+            <br>
+
+            <!-- Боковой панели навигации -->
+            <div class="sidenav" align="center" style="font-size: x-large">
+                <a href="1.html" style="padding-right: 20px">Что такое мемы?</a></br>
+                <br>
+                <a href="2.html" style="padding-right: 20px">Популярные мемы</a></br>
+                <br>
+                <a href="3.html" style="padding-right: 20px">Мемы с котиками</a></br>
+                <br>
+                <a href="4.html"><b>Обратная связь</b></a></br>
+                <br>
+                <a href="https://t.me/sovaSenia"><img
+                        src="https://mrtext.ru/wp-content/uploads/2022/04/5-40.jpg" height="50"></a></br>
+                <br>
+
+            </div>
+        </td>
+    </tr>
+
+</table>
+<br>
+<br>
+<br>
+<table bgcolor="white" align="center" width="200">
+    <tr>
+        <td>
+            <a href="#1"><p align="center">Комментарий</p> </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="#2"><p align="center">Предложение</p> </a>
+        </td>
+    </tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<h3 align="center">Оставьте комментарий</h3><a name="1"></a>
+<form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    <fieldset>
+    <p>Для поисковика:<input type="Text"  name="q" value="search"></p>
+    <p>Имя: <input type="Text" name="last_name" size=20  value="Петр"></p>
+    <p>Мем: <input type="text" name="age" size=20 value="Мем"></p>
+    <p>Тема:
+        <input type="Radio" name="place" value="Cot">Про котиков
+        <input type="Radio" name="place" value="Ziza" checked >Жизненный мем
+        <input type="Radio" name="place" value="Yeah" checked >Мем этого года
+        <input type="Radio" name="place" value="Other" checked >Другой
+    </p>
+
+    <p> Отзыв:
+        <br>
+        <TEXTAREA cols=80 name="textarea" rows=4>Комментарий</TEXTAREA>
+    </p>
+
+    <p>
+        <input type="Reset"  name="Reset"  value="Обновить">
+        <input type="Submit" name="submit"  value="Отправить">
+    </p>
+    </fieldset>
+
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<section id="contact">
+    <h3 align="center">Если хочешь предложить мем</h3><a name="2"></a>
+    <form action="https://www.bing.com/search?" id="User" name="UserEnter" target="_blank">
+        <fieldset>
+            <p>Для поисковика:<input type="Text"  name="q" value="search"></p>
+
+            <label for="fname">Имя:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Фамилия:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="Nname">Никнейм:</label><br>
+            <input type="text" id="Nname" name="org"><br>
+            <label for="email">Почта:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="descr">Описание мема:</label><br>
+        <textarea for="descr" id="descr" style="width:600px; height:200px;"></textarea><br><br>
+            <br> <input type="Reset"  name="Reset"  value="Обновить">
+        <input type="Submit" name="submit"  value="Отправить">
+        </fieldset>
+    </form>
+</section>
+</body>
+<br>
+<br>
+<br>
+<br>
+<a href="../DZ.html">Домашка</a>
+<script>
+    var today = new Date();
+    var dd = (today.getDate()).toString();
+    var mm = (today.getMonth() + 1).toString();
+    var yy = (today.getFullYear() - 2000).toString();
+    if (dd < 10) {
+        dd = '0' + dd;
+    }
+    if (mm < 10) {
+        mm = '0' + mm;
+    }
+    today = yy + mm + dd;
+
+
+    document.getElementById('timeStamp').value = today;
+</script>
+</html>
